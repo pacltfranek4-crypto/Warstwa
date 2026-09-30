@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Klipsy do kabli drukowane w 3D. Kup nawet jedną sztukę, wybierz kolor. Wysyłka w 2–3 dni.">
+<meta property="og:title" content="Warstwa — klipsy do kabli z drukarki 3D">
+<meta property="og:description" content="Klipsy do kabli na biurko. Kup jedną sztukę, wybierz kolor.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"Warstwa","description":"Klipsy do kabli drukowane w 3D","currenciesAccepted":"PLN","areaServed":"PL"}</script>
+<title>Warstwa — klipsy do kabli z drukarki 3D</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e9eae5;--ink:#1c2420;--mute:#5d665f;--card:#f6f6f2;--line:#c9cbc3;--acc:#e8631c;--onacc:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171c19;--ink:#ecece6;--mute:#9aa39b;--card:#212823;--line:#38413b}}
+:root[data-theme="dark"]{--bg:#171c19;--ink:#ecece6;--mute:#9aa39b;--card:#212823;--line:#38413b}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Bricolage Grotesque',system-ui,sans-serif;line-height:1.5}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;max-width:1000px;margin:auto}
+[hidden]{display:none!important}
+nav{display:flex;gap:4px}
+nav button{background:none;border:0;color:var(--mute);padding:6px 10px;border-radius:999px;font-weight:600}
+nav button[aria-pressed=true]{background:var(--card);color:var(--ink);outline:1px solid var(--line)}
+.ord{margin-bottom:12px}
+.ord .top{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.st{background:none;border:1px solid var(--ink);color:var(--ink);border-radius:999px;padding:4px 12px;font-weight:600}
+.st.s1{background:var(--acc);border-color:var(--acc);color:#fff}
+.st.s2{opacity:.6}
+.logo{font-weight:800;font-size:22px;letter-spacing:-.02em}
+button{font:inherit;cursor:pointer}
+.cartbtn{background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:8px 16px;font-weight:600}
+.hero{max-width:1000px;margin:auto;padding:36px 20px 28px;display:grid;gap:24px}
+.hero h1{font-size:clamp(34px,8vw,68px);line-height:1;letter-spacing:-.035em;margin:0;font-weight:800}
+.hero p{max-width:46ch;color:var(--mute);font-size:18px;margin:0}
+.layers{height:64px;border-radius:6px;background:repeating-linear-gradient(0deg,var(--acc) 0 3px,transparent 3px 7px);opacity:.9}
+main{max-width:1000px;margin:auto;padding:0 20px 60px}
+h2{font-size:24px;margin:24px 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.thumb{height:130px;border-radius:6px;background:var(--bg);display:grid;place-items:center}
+.obj{width:120px;height:56px;border-radius:5px 5px 3px 3px;position:relative;background:var(--c);
+background-image:repeating-linear-gradient(0deg,rgba(0,0,0,.14) 0 1px,transparent 1px 5px);display:flex;justify-content:space-evenly;align-items:flex-start;padding-top:0}
+.obj i{display:block;width:12px;height:30px;background:var(--bg);border-radius:0 0 6px 6px}
+.clips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:10px}
+.clip{position:relative;margin-top:10px;display:flex;gap:6px;padding:0 6px 0 6px;align-items:flex-start;height:42px;border-radius:6px;background:var(--c);outline:1px solid rgba(0,0,0,.15)}
+.thumb{border:0;width:100%;cursor:pointer;font:inherit}
+@media (prefers-reduced-motion:reduce){.lid i{transition:none}}
+.clip::before{content:"";position:absolute;left:0;top:-6px;width:6px;height:calc(100% + 6px);background:var(--c);background-image:linear-gradient(rgba(0,0,0,.28),rgba(0,0,0,.28));border-radius:3px 0 0 0}
+.lid{position:absolute;left:6px;top:-6px;height:6px;display:block}
+.lid i{position:absolute;display:block;left:0;top:0;height:6px;width:calc((var(--w) - 6px)/6 + .5px);background:var(--c);background-image:linear-gradient(rgba(0,0,0,.18),rgba(0,0,0,.18));transform-origin:0 50%;transition:transform .3s}
+.lid i i{left:100%}
+.open .lid i{transform:rotate(-9deg)}
+.clip em{display:block;width:16px;height:28px;background:var(--bg);border-radius:0}
+.card h3{margin:0;font-size:18px}
+.card p{margin:0;color:var(--mute);font-size:14px}
+.sw{display:flex;gap:8px}
+.sw button{width:26px;height:26px;border-radius:50%;border:2px solid transparent;background:var(--c);outline:1px solid var(--line)}
+.sw button[aria-pressed=true]{border-color:var(--ink)}
+.row{display:flex;justify-content:space-between;align-items:center;margin-top:auto}
+.price{font-weight:800;font-size:20px}
+.add{background:var(--acc);color:var(--onacc);border:0;border-radius:6px;padding:8px 14px;font-weight:600}
+button:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+aside{position:fixed;top:0;right:0;bottom:0;width:min(380px,100%);background:var(--card);border-left:1px solid var(--line);
+transform:translateX(100%);transition:transform .25s;padding:calc(20px + env(safe-area-inset-top,0px)) 20px calc(20px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:12px;z-index:5}
+aside.open{transform:none}
+.items{flex:1;overflow:auto}
+.it{display:flex;justify-content:space-between;gap:8px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.it small{color:var(--mute);display:block}
+.qty{display:flex;align-items:center;gap:6px}
+.qty button{width:26px;height:26px;border-radius:50%;border:1px solid var(--line);background:none;color:var(--ink)}
+.tot{display:flex;justify-content:space-between;font-weight:800;font-size:20px}
+.note{font-size:13px;color:var(--mute)}
+@media (prefers-reduced-motion:reduce){aside{transition:none}}
+</style>
+</head>
+<body>
+<header><div class="logo">Warstwa</div><nav><button data-tab="shop" aria-pressed="true">Sklep</button><button data-tab="admin" aria-pressed="false">Panel</button></nav><button class="cartbtn" id="open">Koszyk (<span id="cnt">0</span>)</button></header>
+<div id="shopv"><section class="hero">
+<h1>Klipsy do kabli, drukowane warstwa po warstwie.</h1>
+<p>Małe klipsy, które trzymają kable na miejscu. Kupujesz nawet jedną sztukę, wybierasz kolor, a my drukujemy na zamówienie w 2–3 dni.</p>
+<div class="layers" aria-hidden="true"></div>
+</section>
+<main><h2>Produkty</h2><div class="grid" id="grid"></div></main></div>
+<main id="adminv" hidden><h2>Panel zamówień</h2><div class="card ord" id="queue"></div><div id="orders"></div><p class="note">Prototyp: zamówienia zapisują się tylko na tym urządzeniu. Zamówienia od innych klientów wymagają prawdziwego zaplecza (baza danych i płatności).</p></main>
+<aside id="cart" aria-label="Koszyk">
+<div style="display:flex;justify-content:space-between;align-items:center"><strong style="font-size:20px">Twój koszyk</strong><button class="qty" style="all:unset;cursor:pointer;font-size:24px" id="close" aria-label="Zamknij">×</button></div>
+<div class="items" id="items"></div>
+<div class="tot"><span>Razem</span><span id="sum">0 zł</span></div>
+<button class="add" id="buy" style="padding:12px">Przejdź do zamówienia</button>
+<div class="note" id="msg">Płatności (BLIK, karta) dodamy w następnym kroku.</div>
+</aside>
+<script>
+var COLORS={"Grafit":"#2b2f2d","Biały":"#f1f1ec","Pomarańcz":"#e8631c","Zieleń":"#2f8f6b"};
+var P=[
+{id:1,n:"Klips na 1 kabel",d:"1 sztuka z przykrywką. Jedna przegródka na kabel USB lub słuchawek, przykrywka z cienkiego plastiku jest przymocowana z jednej strony i wygina się od drugiej, więc kabel wkładasz i puszczasz, a nie wypada. Przykleja się do blatu lub ściany.",p:3,s:1},
+{id:2,n:"Klips na 2 kable",d:"1 sztuka z przykrywką. Ma 2 przegródki, każdy kabel w osobnej, a przykrywka z cienkiego plastiku jest przymocowana z jednej strony i wygina się od drugiej, więc kabel wkładasz i puszczasz, a nie wypada.",p:4,s:2},
+{id:3,n:"Klips na 3 kable",d:"1 sztuka z przykrywką. Ma 3 przegródki, każdy kabel w osobnej, a przykrywka z cienkiego plastiku jest przymocowana z jednej strony i wygina się od drugiej, więc kabel wkładasz i puszczasz, a nie wypada.",p:5,s:3},
+{id:4,n:"Klips na 4 kable",d:"1 sztuka z przykrywką. Ma 4 przegródki, każdy kabel w osobnej, a przykrywka z cienkiego plastiku jest przymocowana z jednej strony i wygina się od drugiej, więc kabel wkładasz i puszczasz, a nie wypada.",p:6,s:4},
+{id:5,n:"Klips na 5 kabli",d:"1 sztuka z przykrywką. Ma 5 przegródek, każdy kabel w osobnej, a przykrywka z cienkiego plastiku jest przymocowana z jednej strony i wygina się od drugiej, więc kabel wkładasz i puszczasz, a nie wypada.",p:7,s:5},
+{id:6,n:"Klips na 6 kabli",d:"1 sztuka z przykrywką. Ma 6 przegródek, każdy kabel w osobnej, a przykrywka z cienkiego plastiku jest przymocowana z jednej strony i wygina się od drugiej, więc kabel wkładasz i puszczasz, a nie wypada.",p:8,s:6}];
+var sel={},op={},cart=[],orders=[],ST=["Do wydruku","Drukuje się","Wysłane"];
+try{orders=JSON.parse(localStorage.getItem("orders")||"[]")}catch(e){}
+function save(){try{localStorage.setItem("orders",JSON.stringify(orders))}catch(e){}}
+function renderAdmin(){
+ var q={};orders.forEach(function(o){if(o.st<2)o.items.forEach(function(l){var k=l.n+" ("+l.c+")";q[k]=(q[k]||0)+l.q})});
+ var ks=Object.keys(q);
+ $("queue").innerHTML="<strong>Do wydrukowania</strong>"+(ks.length?ks.map(function(k){return '<div class="it"><span>'+k+'</span><strong>× '+q[k]+'</strong></div>'}).join(""):'<p class="note">Brak zamówień do wydruku.</p>');
+ $("orders").innerHTML=orders.map(function(o,i){return '<div class="card ord"><div class="top"><strong>Zamówienie #'+o.id+'</strong><button class="st s'+o.st+'" data-st="'+i+'">'+ST[o.st]+'</button></div><small class="note">'+o.t+' · '+pln(o.total)+'</small>'+o.items.map(function(l){return '<div class="it"><span>'+l.n+' <small>'+l.c+'</small></span><span>× '+l.q+'</span></div>'}).join("")+'</div>'}).join("");
+}
+var $=function(i){return document.getElementById(i)};
+function pln(v){return v+" zł"}
+function render(){
+ $("grid").innerHTML=P.map(function(x){
+  var c=sel[x.id]||"Grafit";
+  var slots='<b class="clip'+(op[x.id]?' open':'')+'" style="--w:'+(22*x.s+6)+'px"><u class="lid"><i><i><i><i><i><i></i></i></i></i></i></i></u>'+new Array(x.s).fill('<em></em>').join('')+'</b>';
+  var sw=Object.keys(COLORS).map(function(k){return '<button style="--c:'+COLORS[k]+'" aria-label="'+k+'" aria-pressed="'+(k===c)+'" data-p="'+x.id+'" data-c="'+k+'"></button>'}).join("");
+  return '<div class="card"><button class="thumb" data-tg="'+x.id+'" aria-label="Odegnij lub puść przykrywkę"><div class="clips" style="--c:'+COLORS[c]+'">'+slots+'</div></button><p class="note" style="margin:0">Kliknij klips, żeby zobaczyć, jak się wygina przykrywka.</p><h3>'+x.n+'</h3><p>'+x.d+'</p><div class="sw">'+sw+'</div><div class="row"><span class="price">'+pln(x.p)+' <small style="font-weight:400;font-size:13px;color:var(--mute)">/ szt.</small></span><button class="add" data-add="'+x.id+'">Dodaj</button></div></div>'}).join("");
+}
+function renderCart(){
+ var n=0,t=0;
+ $("items").innerHTML=cart.length?cart.map(function(l,i){
+  n+=l.q;t+=l.q*l.p;
+  return '<div class="it"><div>'+l.n+'<small>Kolor: '+l.c+' · '+pln(l.p)+'</small></div><div class="qty"><button data-q="'+i+'" data-d="-1" aria-label="Mniej">−</button>'+l.q+'<button data-q="'+i+'" data-d="1" aria-label="Więcej">+</button></div></div>'}).join(""):'<p class="note">Koszyk jest pusty. Dodaj pierwszy produkt.</p>';
+ $("cnt").textContent=n;$("sum").textContent=pln(t);
+}
+document.addEventListener("click",function(e){
+ var b=e.target.closest("button");if(!b)return;
+ if(b.dataset.tab){var ad=b.dataset.tab=="admin";$("shopv").hidden=ad;$("adminv").hidden=!ad;document.querySelectorAll("nav button").forEach(function(n){n.setAttribute("aria-pressed",n===b)});if(ad)renderAdmin()}
+ else if(b.dataset.st){var o=orders[b.dataset.st];o.st=(o.st+1)%3;save();renderAdmin()}
+ else if(b.dataset.tg){var cl=b.querySelector(".clip");cl.classList.toggle("open");op[b.dataset.tg]=cl.classList.contains("open")}
+ else if(b.dataset.c){sel[b.dataset.p]=b.dataset.c;render()}
+ else if(b.dataset.add){
+  var x=P.filter(function(y){return y.id==b.dataset.add})[0],c=sel[x.id]||"Grafit";
+  var f=cart.filter(function(l){return l.id==x.id&&l.c==c})[0];
+  if(f)f.q++;else cart.push({id:x.id,n:x.n,p:x.p,c:c,q:1});
+  renderCart();$("cart").classList.add("open")}
+ else if(b.dataset.q){var l=cart[b.dataset.q];l.q+=+b.dataset.d;if(l.q<1)cart.splice(b.dataset.q,1);renderCart()}
+});
+$("open").onclick=function(){$("cart").classList.add("open")};
+$("close").onclick=function(){$("cart").classList.remove("open")};
+$("buy").onclick=function(){
+ if(!cart.length){$("msg").textContent="Najpierw dodaj coś do koszyka.";return}
+ var t=0;cart.forEach(function(l){t+=l.q*l.p});
+ orders.unshift({id:1000+orders.length+1,t:new Date().toLocaleString("pl-PL"),items:cart.map(function(l){return{n:l.n,c:l.c,q:l.q}}),total:t,st:0});
+ save();cart=[];renderCart();
+ $("msg").textContent="Zamówienie złożone! Zobacz je w zakładce Panel."};
+render();renderCart();
+</script>
+</body>
+</html>
